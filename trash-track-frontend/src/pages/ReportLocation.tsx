@@ -82,13 +82,13 @@ const ReportLocation = () => {
 
   const handleSubmitReport = async () => {
     try {
-      const body = {
-        location_latitude: String(location?.lat),
-        location_longitude: String(location?.lng),
-        image: imageUrl,
-        address: description,
-        status: 'pending',
-      };
+      //   const body = {
+      //     location_latitude: String(location?.lat),
+      //     location_longitude: String(location?.lng),
+      //     image: imageUrl,
+      //     address: description,
+      //     status: 'pending',
+      //   };
 
       //  API call Here to uplaod data into the database
 

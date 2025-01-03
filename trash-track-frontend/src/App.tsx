@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import HomeLayout from '@/layout/Home';
 import LandingPage from '@/pages/LandingPage';
 import ReportLocation from '@/pages/ReportLocation';
+import ListBins from '@/pages/ListBins';
 
 const Router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const Router = createBrowserRouter([
       {
         path: 'report-location',
         element: <ReportLocation />,
+      },
+      {
+        path: 'list-bins',
+        element: <ListBins />,
       },
     ],
   },
