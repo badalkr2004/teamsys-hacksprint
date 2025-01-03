@@ -1,11 +1,14 @@
+import Footer from '@/components/Footer';
 import { Navbar } from '@/components/Navbar';
-import { Button } from '@/components/ui/button';
+
+import { Outlet } from 'react-router-dom';
 
 const Home = () => {
   return (
     <div>
       <Navbar />
-      Home <Button variant={'destructive'}>Button</Button>
+      <Outlet />
+      <Footer />
     </div>
   );
 };

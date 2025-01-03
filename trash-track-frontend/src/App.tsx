@@ -1,16 +1,26 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import HomeLayout from '@/layout/Home';
+import LandingPage from '@/pages/LandingPage';
+import ReportLocation from '@/pages/ReportLocation';
 
 const Router = createBrowserRouter([
   {
     path: '/',
     element: <HomeLayout />,
-    // children:[
-    //   {
-    //     path:"index",
-    //     element:<LandingPage/>
-    //   }
-    // ]
+    children: [
+      {
+        index: true,
+        element: <LandingPage />,
+      },
+      {
+        path: 'report-location',
+        element: <ReportLocation />,
+      },
+    ],
+  },
+  {
+    path: '/admin',
+    element: <LandingPage />,
   },
 ]);
 
